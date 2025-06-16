@@ -1,0 +1,1 @@
+-e . requirements me likhne par jab requiremnts install krenge to directly ek setup.py file install ho jayega
