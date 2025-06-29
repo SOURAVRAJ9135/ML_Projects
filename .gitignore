@@ -195,4 +195,3 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 /artifacts
-/notebook/data/raw.csv
