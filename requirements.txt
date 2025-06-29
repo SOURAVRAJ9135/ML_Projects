@@ -6,3 +6,6 @@ seaborn
 pymysql
 mysql-connector-python
 python-dotenv
+catboost
+xgboost
+mlflow

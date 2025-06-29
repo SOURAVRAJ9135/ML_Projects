@@ -34,8 +34,7 @@ class DataIngestion:
         logging.info("Data Ingestion started")
         try:
             # Read the dataset from SQL database
-            df = read_sql_data()  # Uncomment this line if you want to read from SQL
-
+            df = pd.read_csv(os.path.join('notebook/data','raw.csv'))
             logging.info("Dataset read successfully")
 
             # Save the raw data
