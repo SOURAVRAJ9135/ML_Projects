@@ -6,8 +6,10 @@ import pandas as pd  # for data manipulation
 from sklearn.model_selection import train_test_split  # for splitting data into training and testing sets
 from dotenv import load_dotenv  # for loading environment variables
 import pymysql  # for connecting to MySQL database
-
+import pickle  # for serializing and deserializing Python objects
 load_dotenv()  # Load environment variables from .env file
+
+
 
 host=os.getenv('host')  # Get host from environment variable, default to 'localhost'
 user=os.getenv('user')  # Get user from environment variable, default to 'root'
@@ -47,3 +49,4 @@ def save_object(file_path, obj):
 
     except Exception as e:
         raise CustomException(e, sys)
+

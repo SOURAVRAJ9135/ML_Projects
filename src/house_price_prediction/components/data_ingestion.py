@@ -34,7 +34,7 @@ class DataIngestion:
         logging.info("Data Ingestion started")
         try:
             # Read the dataset from SQL database
-            df = pd.read_csv(os.path.join('notebook/data','raw.csv'))
+            df = pd.read_csv(os.path.join('artifacts','raw.csv'))
             logging.info("Dataset read successfully")
 
             # Save the raw data
@@ -54,7 +54,7 @@ class DataIngestion:
             return (
                 self.ingestion_config.train_data_path,
                 self.ingestion_config.test_data_path,
-                self.ingestion_config.raw_data_path
+                
             )
         except Exception as e:
             raise CustomException(e, sys) ## raise custom exception if any error occurs
